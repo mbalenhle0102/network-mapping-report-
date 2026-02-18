@@ -19,7 +19,12 @@ Below is a visual representation of the network path used during this test:
 <img width="1024" height="1024" alt="diagram" src="https://github.com/user-attachments/assets/2bb2e751-9bc2-4cfc-9c43-a01d867e86b6" />
 
 
-![Network Map](<img width="795" height="629" alt="ip config" src="https://github.com/user-attachments/assets/fdb3238b-06ab-4a27-bffc-57119dc0d884" />
+![Network Map](<img width="795" height="629" alt="ip config" src="https://github.com/user-attachments/assets/55d7efb4-de16-48ce-838c-558c5c9a9191" />
+<img width="507" height="293" alt="ping test" src="https://github.com/user-attachments/assets/e15f6247-e3dd-4099-b193-6d8a9e96522f" />
+<img width="507" height="250" alt="ping google" src="https://github.com/user-attachments/assets/f980cc42-f5e0-4372-93e2-5adf59ca9404" />
+
+
+
 )## Methodology
 To complete this task, the following steps were performed:
 1. **Discovery:** Used the `ipconfig` (or `ifconfig`) command to identify the device's local IP and the router's gateway address.
