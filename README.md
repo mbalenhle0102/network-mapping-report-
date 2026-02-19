@@ -14,7 +14,8 @@
 ---
 
 ## 2. Network Topology Diagram
-<img width="1024" height="1024" alt="diagram" src="https://github.com/user-attachments/assets/2bb2e751-9b2c-4cfc-9c43-a01d867e86b6" />
+<img width="1024" height="1024" alt="network_map png" src="https://github.com/user-attachments/assets/a01cce79-8040-45b5-9e2d-bd6631c2e047" />
+
 
 > **Technical Overview:** This diagram illustrates the logical transition from a private LAN to the public WAN. Data originates at the workstation (172.20.7.117) and is routed to the Default Gateway (172.20.6.1), where Network Address Translation (NAT) allows communication with the global internet.
 
