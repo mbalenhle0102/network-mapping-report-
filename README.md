@@ -17,7 +17,7 @@ This project demonstrates the ability to map a local area network (LAN) and veri
 
 
 ## Network Topology Diagram
-![Network Map](!(<img width="1024" height="1024" alt="network_map png" src="https://github.com/user-attachments/assets/07931df0-afc2-4c14-8ae7-767200f06675" />
+[Network Map](<img width="1024" height="1024" alt="network_map png" src="https://github.com/user-attachments/assets/07931df0-afc2-4c14-8ae7-767200f06675" />
 
 
 > **Description:** Architectural Overview: This topology illustrates the transition from Private Addressing (LAN) to Public Addressing (WAN). It visualizes the "First Hop" logic where the workstation encapsulates data frames and sends them to the MAC address of the Default Gateway. The Gateway then performs NAT (Network Address Translation) to route the request across the ISP’s infrastructure to the global internet cloud.. 
@@ -30,6 +30,8 @@ This project demonstrates the ability to map a local area network (LAN) and veri
 
 ### 2. Connectivity Test (Ping)
 <img width="507" height="293" alt="ping test" src="https://github.com/user-attachments/assets/e15f6247-e3dd-4099-b193-6d8a9e96522f" />
+
+
 <img width="507" height="250" alt="ping google" src="https://github.com/user-attachments/assets/f980cc42-f5e0-4372-93e2-5adf59ca9404" />
 
 ##Description:**Network Verification: Sending ICMP Echo Requests to 8.8.8.8 and https://www.google.com/url?sa=E&source=gmail&q=google.com yielded a 0% packet loss and an exceptionally low average latency of 1ms.
