@@ -18,19 +18,21 @@ This project demonstrates the ability to map a local area network (LAN) and veri
 
 ## Network Topology Diagram
 ![Network Map](!(<img width="1024" height="1024" alt="network_map png" src="https://github.com/user-attachments/assets/07931df0-afc2-4c14-8ae7-767200f06675" />
-)
-)
+
+
 > **Description:** Architectural Overview: This topology illustrates the transition from Private Addressing (LAN) to Public Addressing (WAN). It visualizes the "First Hop" logic where the workstation encapsulates data frames and sends them to the MAC address of the Default Gateway. The Gateway then performs NAT (Network Address Translation) to route the request across the ISP’s infrastructure to the global internet cloud.. 
 
 
 ### 1. Local IP Configuration
 <img width="795" height="629" alt="ip config" src="https://github.com/user-attachments/assets/55d7efb4-de16-48ce-838c-558c5c9a9191" />
-> **Description:** Technical Analysis: This output reveals the workstation is operating within a Class B private network range. The IPv4 Address (172.20.7.117) is the local identifier for this NIC, while the Default Gateway (172.20.6.1) indicates the internal interface of the router. The fact that these are on the same subnet confirms the local routing table is correctly configured to hand off non-local traffic to the gateway..
+
+##Description:** Technical Analysis: This output reveals the workstation is operating within a Class B private network range. The IPv4 Address (172.20.7.117) is the local identifier for this NIC, while the Default Gateway (172.20.6.1) indicates the internal interface of the router. The fact that these are on the same subnet confirms the local routing table is correctly configured to hand off non-local traffic to the gateway..
 
 ### 2. Connectivity Test (Ping)
 <img width="507" height="293" alt="ping test" src="https://github.com/user-attachments/assets/e15f6247-e3dd-4099-b193-6d8a9e96522f" />
 <img width="507" height="250" alt="ping google" src="https://github.com/user-attachments/assets/f980cc42-f5e0-4372-93e2-5adf59ca9404" />
-> **Description:**Network Verification: Sending ICMP Echo Requests to 8.8.8.8 and https://www.google.com/url?sa=E&source=gmail&q=google.com yielded a 0% packet loss and an exceptionally low average latency of 1ms.
+
+##Description:**Network Verification: Sending ICMP Echo Requests to 8.8.8.8 and https://www.google.com/url?sa=E&source=gmail&q=google.com yielded a 0% packet loss and an exceptionally low average latency of 1ms.
 
 Name Resolution: The successful ping to google.com proves that the DNS (Domain Name System) is correctly resolving hostnames to IP addresses.
 
