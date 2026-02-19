@@ -17,7 +17,8 @@ This project demonstrates the ability to map a local area network (LAN) and veri
 
 
 ## Network Topology Diagram
-![Network Map](![Uploading network_map.png.png…]()
+![Network Map](!(<img width="1024" height="1024" alt="network_map png" src="https://github.com/user-attachments/assets/07931df0-afc2-4c14-8ae7-767200f06675" />
+)
 )
 > **Description:** Architectural Overview: This topology illustrates the transition from Private Addressing (LAN) to Public Addressing (WAN). It visualizes the "First Hop" logic where the workstation encapsulates data frames and sends them to the MAC address of the Default Gateway. The Gateway then performs NAT (Network Address Translation) to route the request across the ISP’s infrastructure to the global internet cloud.. 
 
