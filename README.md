@@ -17,18 +17,22 @@ This project demonstrates the ability to map a local area network (LAN) and veri
 
 
 ## Network Topology Diagram
-<img width="1024" height="1024" alt="diagram" src="https://github.com/user-attachments/assets/2bb2e751-9b2c-4cfc-9c43-a01d867e86b6" />
-> **Description:** This diagram provides a visual representation of the data path from the local workstation through the router and ISP to the public internet.
+![Network Map](network_map.png)
+> **Description:** Architectural Overview: This topology illustrates the transition from Private Addressing (LAN) to Public Addressing (WAN). It visualizes the "First Hop" logic where the workstation encapsulates data frames and sends them to the MAC address of the Default Gateway. The Gateway then performs NAT (Network Address Translation) to route the request across the ISP’s infrastructure to the global internet cloud.. 
+
 
 ### 1. Local IP Configuration
 <img width="795" height="629" alt="ip config" src="https://github.com/user-attachments/assets/55d7efb4-de16-48ce-838c-558c5c9a9191" />
-> **Description:** Output of the `ipconfig` command identifying the workstation's unique IP on the LAN and the Default Gateway (Router) address.
+> **Description:** Technical Analysis: This output reveals the workstation is operating within a Class B private network range. The IPv4 Address (172.20.7.117) is the local identifier for this NIC, while the Default Gateway (172.20.6.1) indicates the internal interface of the router. The fact that these are on the same subnet confirms the local routing table is correctly configured to hand off non-local traffic to the gateway..
 
 ### 2. Connectivity Test (Ping)
 <img width="507" height="293" alt="ping test" src="https://github.com/user-attachments/assets/e15f6247-e3dd-4099-b193-6d8a9e96522f" />
 <img width="507" height="250" alt="ping google" src="https://github.com/user-attachments/assets/f980cc42-f5e0-4372-93e2-5adf59ca9404" />
-> **Description:** Successful `ping` tests to Google's DNS (8.8.8.8) and google.com, verifying that the network is successfully resolving names and routing traffic externally with 0% packet loss.
+> **Description:**Network Verification: Sending ICMP Echo Requests to 8.8.8.8 and https://www.google.com/url?sa=E&source=gmail&q=google.com yielded a 0% packet loss and an exceptionally low average latency of 1ms.
 
+Name Resolution: The successful ping to google.com proves that the DNS (Domain Name System) is correctly resolving hostnames to IP addresses.
+
+Network Stability: The 1ms RTT (Round Trip Time) suggests a high-speed fiber or high-performance local backbone connection with negligible jitter.
 
 
 
@@ -40,3 +44,9 @@ To complete this task, the following steps were performed:
 
 ## Conclusion
 The connectivity test was successful. The 0% packet loss confirms that the local Network Interface Card (NIC) is functional, the router is correctly performing NAT (Network Address Translation), and there is an active route to the public internet.
+
+##Term,Definition in this Project
+ICMP,"The protocol used by ping to send ""Echo Requests"" and receive ""Echo Replies."""
+Latency,The time it takes for a data packet to travel to the target and back (measured in ms).
+Default Gateway,"The ""exit door"" of your local network; the router's address."
+Subnet Mask,Determines which part of the IP address is the network ID vs. the host ID.
